@@ -1,0 +1,18 @@
+@import "../core/keyframes.scss";
+@import "../core/reset.scss";
+@import "../core/variables.scss";
+
+.NPCPage_hero {
+    width: 100%;
+    &_video{
+        width: 100%;
+    //    position:absolute;
+    //    top: 0;
+    //    border: 2px solid red;
+    //     z-index: -1;
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: -12%;
+    }
+}

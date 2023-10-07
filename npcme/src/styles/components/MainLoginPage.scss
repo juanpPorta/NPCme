@@ -1,4 +1,5 @@
 @import "../core/keyframes.scss";
+@import "../core/variables.scss";
 
 .main_login {
     width: 100%;
@@ -12,16 +13,18 @@
     &_main--title {
         padding-top: 70px;
         margin-bottom: 1%;
-        line-height: 0;
+        font-size: 3rem;
         animation: fadeIn-moveIn linear 2s;
     }
     &_sec--title {
         font-size: 1.8rem;
+        margin-bottom: 3%;
         animation: fadeIn-moveIn linear 2s;
     }
     &_ter--title {
         font-size: 1.8rem;
         animation: fadeIn-moveIn linear 2s;
+        margin-bottom: 3%;
     }
     &_link {
         background-color: white;

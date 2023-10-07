@@ -1,4 +1,5 @@
 @import "../core/keyframes.scss";
+@import "../core/variables.scss";
 
 .footer_login {
     width: 100%;
@@ -14,6 +15,7 @@
     width: 100%;
     padding-top: 3px;
     padding-bottom: 7px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     &_copy {
         width: 100%;
         text-align: center;

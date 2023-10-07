@@ -2,6 +2,7 @@
 // import WalletBar from './components/WalletBar'
 import { Routes, Route } from "react-router-dom";
 import LandingLoginPage from "./components/LoginPage/LandingLoginPage";
+import LandingNPCPage from "./components/NpcPage/LandingNPCPage";
 
 function App() {
   // const { data, isLoading, isError } = useBlock({
@@ -13,6 +14,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<LandingLoginPage />}></Route>
+        <Route path="/Johnlawy" element={<LandingNPCPage />}></Route>
       </Routes>
       {/* <p>
         Get started by editing&nbsp;
