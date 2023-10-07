@@ -1,20 +1,12 @@
 import { InjectedConnector, StarknetConfig } from '@starknet-react/core'
-// import { argent } from "@starknet-react/core";
-// import { braavos } from "@starknet-react/core";
 import { Provider, constants } from "starknet";
-// import { RpcProvider } from 'starknet';
 import { HashRouter } from "react-router-dom";
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 
-// const connectors = [
-//   braavos(),
-//   argent(),
-// ];
-
 const connectors = [
-  new InjectedConnector({ options: { id: 'braavos' } }),
+  new InjectedConnector( {options: { id: 'braavos' }} ),
   new InjectedConnector({ options: { id: 'argentX' } }),
 ]
 
