@@ -13,5 +13,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "root": true,
-  "rules": {}
+  "rules": {
+      "@typescript-eslint/no-explicit-any": "off"
+  }
 }

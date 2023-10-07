@@ -1,8 +1,51 @@
 import "../../styles/components/InfoSectionNPCPage.scss";
 import profilePic from "../../images/Profile_pic.jpg";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function InfoSectionNPCPage() {
+
+//States
+const [formInfo, setFormInfo] = useState({
+    time: "",
+    payment: 0,
+    experience: ""
+  });
+const [sent, setSent] = useState(false);
+
+//Effects
+ useEffect(() => {
+    hash(formInfo);
+  }, [sent]);
+
+//Functions
+
+function sendContract(ev: any) {
+    ev.preventDefault();
+    setSent(true);
+    //mandar info a...
+    console.log(formInfo);
+}
+
+function hash(formInfo) {
+    const str = formInfo.experience;
+    const value = str.charCodeAt(0);
+    console.log("hash");
+    console.log(value);
+}
+
+function getFormInfo(ev: any) {
+    const input = ev.target.name;
+    const value = ev.target.value;
+
+    if (input === "time") {
+        setFormInfo({ ...formInfo, time: value });
+      } else if (input === "payment") {
+        setFormInfo({ ...formInfo, payment: value });
+      } else if (input === "experience") {
+        setFormInfo({ ...formInfo, experience: value });
+    }
+}
+
   return (
     <section>
         <div className="infoSection">
@@ -35,22 +78,22 @@ function InfoSectionNPCPage() {
                         id="time"
                         name="time"
                         placeholder="Time"
-                        // onChange={getFormInfo}
-                        // value={formInfo.nombre}
+                        onChange={getFormInfo}
+                        value={formInfo.time}
                         ></input>
                     </div>
                     <div className="infoSection_form--wrapper" >
-                        <label className="infoSection_form--label" htmlFor="amount" hidden>
+                        <label className="infoSection_form--label" htmlFor="payment" hidden>
                         Nombre
                         </label>
                         <input
                         className="infoSection_form--input"
                         type="text"
-                        id="amount"
-                        name="amount"
-                        placeholder="Amount"
-                        // onChange={getFormInfo}
-                        // value={formInfo.nombre}
+                        id="payment"
+                        name="payment"
+                        placeholder="Payment"
+                        onChange={getFormInfo}
+                        value={formInfo.payment}
                         ></input>
                     </div>
                     <div className="infoSection_form--wrapper" >
@@ -62,11 +105,11 @@ function InfoSectionNPCPage() {
                         id="experience"
                         name="experience"
                         placeholder="Experience"
-                        // onChange={getFormInfo}
-                        // value={formInfo.mensaje}
+                        onChange={getFormInfo}
+                        value={formInfo.experience}
                         ></textarea>
                     </div>
-                    <NavLink to="" className="infoSection_form--submit" >Choose me</NavLink>
+                    <button type="submit" onClick={sendContract} className="infoSection_form--submit" >Choose me</button>
                 </form>
             </article>
         </div>
