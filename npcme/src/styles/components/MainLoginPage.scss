@@ -1,0 +1,49 @@
+@import "../core/keyframes.scss";
+
+.main_login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 120px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    &_main--title {
+        padding-top: 70px;
+        margin-bottom: 1%;
+        line-height: 0;
+        animation: fadeIn-moveIn linear 2s;
+    }
+    &_sec--title {
+        font-size: 1.8rem;
+        animation: fadeIn-moveIn linear 2s;
+    }
+    &_ter--title {
+        font-size: 1.8rem;
+        animation: fadeIn-moveIn linear 2s;
+    }
+    &_link {
+        background-color: white;
+        padding: 6px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 10px;
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: purple;
+        animation: fadeIn-moveIn linear 2s;
+        &:hover {
+            background-color: purple;
+            color:white;
+        }
+    }
+    &_video{
+        background-color:  rgb(36, 5, 56);
+        position:absolute;
+        top: -3%;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+}
