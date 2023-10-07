@@ -7,7 +7,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "@/components/ui/button";
 import { Button } from "@/components/ui/button";
 
 export default function ConnectModal() {

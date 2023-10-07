@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next-tools/dynamic": "^0.0.11",
+    "@react-spectrum/dialog": "^3.8.3",
     "@starknet-react/chains": "^0.1.0-next.0",
     "@starknet-react/core": "^2.0.0-next.0",
     "@typescript-eslint/eslint-plugin": "^6.7.4",

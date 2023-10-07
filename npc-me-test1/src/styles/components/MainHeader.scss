@@ -1,0 +1,81 @@
+@import "../core/keyframes.scss";
+@import "../core/reset.scss";
+@import "../core/variables.scss";
+
+.header_landing {
+    padding-top: 10px;
+    height: 14vh;
+    width: 100%;
+    // position: fixed;
+    // top:0;
+    // z-index:1;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    &_img {
+        width: 100%;
+        height: 100%;
+        &--wrapper {
+            width: 80px;
+            height: 59px;
+            padding-left: 10px;
+        }
+    }
+    &_search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 90px;
+        &--input {
+            border-radius: 5px;
+            width: 340px;
+            border: 2px solid rgb(25, 219, 226);
+            padding:3px;
+        }
+        &--icon {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+            padding: 6px;
+        }
+    }
+    &_profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-right: 20px;
+    }
+    &_link1{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        padding:6px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 6px;
+        background-color: rgb(25, 219, 226);;
+        text-align: center;
+        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+            color: black;
+            background-color: rgb(18, 214, 188);
+        }
+    }
+    &_link2 {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        padding:6px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 6px;
+        background-color: grey;
+        text-align: center;
+        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+            background-color:rgb(150, 146, 146);
+        }
+    }
+}
