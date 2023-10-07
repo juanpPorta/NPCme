@@ -1,17 +1,27 @@
-import { InjectedConnector, StarknetConfig } from '@starknet-react/core'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import { HashRouter } from "react-router-dom";
+import { goerli } from "@starknet-react/chains";
+import {
+  StarknetConfig,
+  publicProvider,
+  argent,
+  braavos,
+} from "@starknet-react/core";
 
-const connectors = [
-  new InjectedConnector({ options: { id: 'braavos' } }),
-  new InjectedConnector({ options: { id: 'argentX' } }),
-]
+const chains = [goerli];
+const providers = [publicProvider()];
+const connectors = [argent(), braavos()];
+console.log(providers);
+console.log(connectors);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <StarknetConfig autoConnect connectors={connectors}>
+    <StarknetConfig  
+      chains={chains}
+      providers={providers}
+      connectors={connectors}>
       <HashRouter>
        <App />
       </HashRouter>

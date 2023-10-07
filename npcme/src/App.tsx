@@ -3,6 +3,7 @@
 import { Routes, Route } from "react-router-dom";
 import LandingLoginPage from "./components/LoginPage/LandingLoginPage";
 import LandingNPCPage from "./components/NpcPage/LandingNPCPage";
+// import WalletBar from "./hooks/WalletConnection";
 
 function App() {
   // const { data, isLoading, isError } = useBlock({
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<LandingLoginPage />}></Route>
         <Route path="/Johnlawy" element={<LandingNPCPage />}></Route>
       </Routes>
+      {/* <WalletBar /> */}
       {/* <p>
         Get started by editing&nbsp;
         <code>pages/index.tsx</code>
