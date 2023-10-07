@@ -1,7 +1,6 @@
 import HeaderLoginPage from "./HeaderLoginPage";
 import MainLoginPage from "./MainLoginPage";
 import FooterLoginPage from "./FooterLoginPage";
-import WalletBar from "../WalletBar";
 
 function LandingLoginPage() {
   return (
@@ -9,7 +8,6 @@ function LandingLoginPage() {
       <HeaderLoginPage />
       <MainLoginPage />
       <FooterLoginPage />
-      <WalletBar />
     </>
   );
 }

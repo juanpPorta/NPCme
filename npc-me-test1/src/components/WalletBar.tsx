@@ -114,11 +114,18 @@ function WalletBar() {
   console.log(status);
 
   
-const StyledButton = styled(Button)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.primary.contrastText,
+const StyledButton = styled(Button)(() => ({
+  backgroundColor: "lightblue",
+  color: "black",
+  marginRight: "20px",
+  paddingTop: "1px",
+  paddingBottom: "1px",
+  marginTop: "19px",
+  fontSize: '01rem',
+  textTransform: "capitalize",
+  fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;",
   "&:hover": {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: "cyan",
   },
 }));
 
