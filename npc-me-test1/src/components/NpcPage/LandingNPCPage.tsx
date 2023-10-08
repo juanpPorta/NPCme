@@ -10,7 +10,7 @@ function LandingNPCUser(props) {
     <>
         <MainHeader />
         <BannerNPCPage/>
-        <InfoSectionNPCPage requestReceived={props.requestReceived} setRequestReceived={props.setRequestReceived} setRequestInfo={props.setRequestInfo} requestInfo={props.requestInfo}/>
+        <InfoSectionNPCPage change={props.change} requestReceived={props.requestReceived} setRequestReceived={props.setRequestReceived} setRequestInfo={props.setRequestInfo} requestInfo={props.requestInfo}/>
         {/* <WalletConnection /> */}
         {/* <MainFooter /> */}
     </>

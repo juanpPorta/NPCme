@@ -10,7 +10,7 @@ function LandingNPCUser(props) {
     <>
         <MainHeader />
         <BannerNPCUser />
-        <InfoSectionNPCUser requestInfo={props.requestInfo} setRequestInfo={props.setRequestInfo} requestReceived={props.requestReceived} setRequestReceived={props.setRequestReceived}/>
+        <InfoSectionNPCUser requestInfo={props.requestInfo} setRequestInfo={props.setRequestInfo} requestReceived={props.requestReceived} setRequestReceived={props.setRequestReceived} requestAccepted={props.requestAccepted} setRequestAccepted={props.setRequestAccepted} requestDeclined={props.requestDeclined} setRequestDeclined={props.setRequestDeclined} change={props.change}/>
         {/* <WalletConnection /> */}
         {/* <MainFooter /> */}
     </>

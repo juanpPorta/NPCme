@@ -1,22 +1,25 @@
 import "../../styles/components/InfoSectionNPCPage.scss";
 import profilePic from "../../images/Profile_pic.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function InfoSectionNPCUser(props) {
+
 //States
 const [signAction, setSignAction] = useState("");
+
+//Effect
+useEffect(() => {
+    props.change({action: signAction});
+  }, [signAction]);
 
 //Functions
 function onSign(ev) {
     const action = ev.target.id;
-    console.log(action);
     
     if (action == "accept") {
         setSignAction("accepted");
-        props.setRequestAccepted(true);
       } else if (action == "decline") {
         setSignAction("declined");
-        props.setRequestDeclined(true);
       } 
 }
 

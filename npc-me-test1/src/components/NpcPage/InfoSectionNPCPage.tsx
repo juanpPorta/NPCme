@@ -15,6 +15,7 @@ const [sent, setSent] = useState(false);
 //Effects
  useEffect(() => {
     hash(formInfo);
+    props.change({sent: sent, formInfo: formInfo});
   }, [sent]);
 
 //Functions
@@ -22,8 +23,6 @@ const [sent, setSent] = useState(false);
 function sendRequest(ev: any) {
     ev.preventDefault();
     setSent(true);
-    props.setRequestReceived(true);
-    props.setRequestInfo(formInfo);
 }
 
 function hash(formInfo) {
