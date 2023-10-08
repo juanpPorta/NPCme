@@ -1,16 +1,16 @@
 import "../../styles/components/MainLanding.scss";
 import MainHeader from "../reusables/MainHeader";
 // import MainFooter from "../reusables/MainFooter";
-import BannerNPCPage from "./BannerNPCPage";
-import InfoSectionNPCPage from "./InfoSectionNPCPage";
+import BannerNPCUser from "./BannerNPCUser";
+import InfoSectionNPCUser from "./InfoSectionNPCUser";
 // import WalletConnection from "../../hooks/WalletConnection";
 
 function LandingNPCUser(props) {
   return (
     <>
         <MainHeader />
-        <BannerNPCPage/>
-        <InfoSectionNPCPage requestReceived={props.requestReceived} setRequestReceived={props.setRequestReceived} setRequestInfo={props.setRequestInfo} requestInfo={props.requestInfo}/>
+        <BannerNPCUser />
+        <InfoSectionNPCUser requestInfo={props.requestInfo} setRequestInfo={props.setRequestInfo} requestReceived={props.requestReceived} setRequestReceived={props.setRequestReceived}/>
         {/* <WalletConnection /> */}
         {/* <MainFooter /> */}
     </>
